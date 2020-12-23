@@ -9,6 +9,7 @@ comp = ->(f1, f2) { ->(x) { f1[f2[x]] } }
 identity = ->(x) { x }
 constant = ->(x) { ->(_) { x } }
 second = ->((_a, b)) { b }
+# JK: The underscore variable is used to say, I don't care about this variable. 
 
 #
 # Middleware
